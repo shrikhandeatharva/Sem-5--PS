@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" href="squarecube.css"> -->
+    <title>Squares and cubes</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, rgb(219, 234, 254), rgb(147, 197, 253), rgb(59, 130, 246));
+    /* background-repeat: no-repeat; */
+}
+th{
+    background-color: #ff0000;
+    color: white;
+}
+tr:hover {background-color: rgb(101, 158, 190);}
+th,td{
+    text-align: left;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <center>
+        <br><br>
+        <h1>Squares and Cubes of numbers from 1 to 10</h1>
+        <br><br>
+        <table border="1">
+            <tr>
+                <th>Number</th>
+                <th>Square</th>
+                <th>Cube</th>
+            </tr>
+            <script>
+                for(var i=0;i<=10;i++){
+                    document.write("<tr><td>"+i+"</td><td>"+i*i+"</td><td>"+i*i*i+"</td><tr>")
+                }
+                    </script>
+        </table>
+    </center>
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>Searchbar</title>
+    <style>
+        body{
+    /* background-image: url(https://wallpapercave.com/wp/wp4292424.jpg); */
+    background-image: linear-gradient(to right, rgb(56, 189, 248), rgb(59, 130, 246));
+    background-size: cover;
+    /* min-height: 100vh; */
+}
+
+.logo{
+    position: absolute;
+    height: auto;
+    right: 20px;
+    top: 18px;
+    width: 40px;
+}
+.navbar{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgb(16, 97, 148);
+    height: 60px;
+}
+.navbar ul{
+    overflow: auto;
+    /* color: black; */
+}
+.navbar li{
+    margin-top: 2px;
+    margin-right: 25px;
+    font-size: larger;
+    color:white;
+    padding-left: -5px;
+    padding-right: 10px;
+    float: left;
+    list-style: none;
+}
+.search{
+    margin: 1px;
+    float: right;
+    margin-right: 70px;
+}
+.navbar input{
+    border: 2px solid black;
+    border-radius: 7px;
+    width: 290px;
+    height: 20px;
+}
+.navbar li a{
+    padding: 3px 10px;
+    text-decoration: none;
+    color: white;
+}
+#searchButton{
+    border-radius: 5px;
+    background-color: rgb(199, 60, 60);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <img src="images/book-logo image.jpg" class="logo"> -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Books</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">About Us</a></li>
+                <div class="search">
+                    <!-- <form action = "/action_page.php">
+                    <input type="text" id="searchbar" name="search"   onkeyup="search_book()" placeholder="Search for Books,Manga">
+                    <button type = "submit"><i class = "fa fa-search"></i></button>
+                    <button id="button" type="submit">Search</button>
+                    <button id="searchButton" onclick="search_book()">Search</button>
+                </form> -->
+                <form>
+                    <input type="text" id="searchbar" name="search" placeholder="Search for Books, Manga" onkeyup="search_book()">
+                    <button id="searchButton" type="button" onclick="search_book()">Search</button>
+                </form>
+                
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <ol>
+        <li class="book&">Harry Potter</li>
+        <li class="book&">Da Vinci Code</li>
+        <li class="book&">IT</li>
+        <li class="book&">The room on the roof</li>
+        <li class="book&">Percy Jackson</li>
+        <li class="book&">Shiva triology</li>
+        <li class="book&">Diary of a wimpy kid</li>
+        <li class="book&">Twilight</li>
+        <li class="book&">Wings of Fire</li>
+        <li class="book&">Alice's Adventures in Wonderland</li>
+        <li class="book&">Hamlet</li>
+    </ol>
+
+<script>
+    function search_book(){
+        let input = document.getElementById('searchbar').value
+        input = input.toUpperCase();
+        let x = document.getElementsByClassName('book&');
+
+        for(i=0;i<x.length;i++){
+            if(!x[i].innerHTML.toUpperCase().includes(input)){
+                x[i].style.display="none";
+            }
+            else{
+                x[i].style.display="list-item";
+            }
+        }
+    }
+
+</script>
+
+</body>
+</html>

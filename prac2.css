@@ -1,0 +1,58 @@
+.tableheader{
+    /* background-color: aqua; */
+    /* background-image: url(https://cdn1.vectorstock.com/i/1000x1000/95/30/blurry-purple-background-vector-20639530.jpg); */
+    background-image: linear-gradient(to right, rgb(56, 189, 248), rgb(59, 130, 246));
+    /* margin-right: 550px; */
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 100px;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+    font-size: large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* .table{
+    justify-content: center;
+    align-items: center;
+    padding-left: 550px;
+    padding-top: 250px;
+} */
+.td,th,table{
+    /* padding-left: 20px; */
+    /* text-align: center; */
+    text-align: left;
+    /* border: 1px solid black; */
+}
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* min-height: 100vh; */
+    /* background-image: url(https://c4.wallpaperflare.com/wallpaper/151/605/295/blurred-wallpaper-preview.jpg); */
+    background-image: url(https://wallpaperaccess.com/full/448244.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(7px);
+    backface-visibility: blur;
+}
+#table1{
+    width: 70vw;
+    height: 50vh;
+    background-color: rgba(228, 216, 216, 0.333);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-left: 75px;
+}
+#headline{
+    font-size: 20px;
+}
+#intext{
+    font-size: large;
+}
+td img{
+    width: 36px;
+    height: 36px;
+    margin-right: .7rem;
+    border-radius: 50%;
+    vertical-align: middle;
+}
